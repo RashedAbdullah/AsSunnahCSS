@@ -1,0 +1,36 @@
+@font-face {
+    font-family: PlaypenSans-Regular;
+    src: url(./fonts/PlaypenSans-Regular.ttf), url(./fonts/PlaypenSans-Thin.ttf);
+}
+
+@font-face {
+    font-family: PlaypenSans-Bold;
+    src: url(./fonts/PlaypenSans-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1000px;
+}
+
+.parent {
+    background-color: red;
+    height: 500px;
+    width: 500px;
+    /* position: relative; */
+}
+.width {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    font-family: PlaypenSans-Regular;
+    color: white;
+}
+
+.anotherFont {
+    font-family: PlaypenSans-Bold;
+}

@@ -1,0 +1,807 @@
+/* font-family: 'DM Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,800&display=swap');
+
+@font-face {
+    font-family: Darkline;
+    src: url(./Fonts/Darkline.ttf);
+}
+
+@font-face {
+    font-family: Sequel Sans;
+    src: url(./Fonts/Sequel\ Sans\ Roman\ Body.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+}
+
+.logo > p {
+    color: #000;
+    font-family: Darkline;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.625rem; /* 100% */
+    letter-spacing: 0.02625rem;
+}
+
+.info > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.info > ul > li {
+    list-style: none;
+    cursor: pointer;
+    color: rgba(38, 38, 38, 0.60);
+    font-family: DM Sans;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.625rem; /* 280% */
+    letter-spacing: 0.00938rem;
+    transition: 0.3s;
+}
+
+.info > ul > li:hover {
+    color: rgb(0, 53, 53);
+}
+
+.info > ul > .home {
+    color: var(--Main, #262626);
+    font-family: DM Sans;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.625rem; /* 280% */
+    letter-spacing: 0.00938rem;
+}
+
+.sreachBox {
+    display: flex;
+    width: 6.25rem;
+    height: 2.1875rem;
+    padding: 0rem 0.625rem 0rem 0.9375rem;
+    justify-content: center;
+    align-items: center;
+    gap: -0.75rem;
+    flex-shrink: 0;
+    border-radius: 0.375rem;
+    background: #B8C2CE;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sreachBox:hover {
+    background-color: rgb(0, 47, 47);
+}
+
+.sreachBox > span {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.625rem; /* 300% */
+    letter-spacing: 0.00875rem;
+}
+
+.sreachBox > i {
+    color: #FFFFFF;
+    margin-right: 15px;
+}
+
+
+
+
+.heroArea {
+    background: #F9FAFC;
+}
+.insideHero {
+    max-width: 90%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.texts {
+    font-family: Sequel Sans;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.6875rem; /* 93.75% */
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 50px;
+}
+
+.playerImg {
+    height: 30rem;
+    flex-shrink: 0;
+    position: relative;
+    bottom:350px;
+    left: 150px;
+    box-sizing: border-box;
+    max-width: 700px;
+}
+
+.smallTexts {
+    color: #262626;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    max-width:30vw;
+    position: relative;
+    bottom: 350px;
+    left: 370px;
+    overflow: hidden;
+    margin-bottom: -250px;
+}
+
+.smallTexts > div > button {
+    padding: 0.30rem 1.5rem;
+    border-radius: 0.375rem;
+    background: #262626;
+    color: #E1E8F0;
+    font-family: DM Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.375rem; 
+    letter-spacing: 0.1125rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.asides {
+    margin-right: 50px;
+}
+
+.today {
+    display: inline-flex;
+    padding: 0.25rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6875rem;
+    border-radius: 0.1875rem;
+    background: #E1E8F0;
+    margin-top: 80px;
+    color: #B8C2CE;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize; 
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.today:hover {
+    color: white;
+    background-color: rgb(0, 34, 34);
+}
+
+
+.race1 {
+    background-image: url(./images/race1.png);
+    width: 16.875rem;
+    height: 14.5625rem;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+
+.race1 > p, .reace2 > p {
+    color: rgba(38, 38, 38, 0.60);
+    font-family: DM Sans;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100.9%; /* 0.63063rem */
+    padding: 160px 0 10px 5px;
+}
+
+.race1 > h4, .reace2 > h4 {
+    color: #262626;
+    font-family: Sequel Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.9%; /* 1.239rem */
+    padding: 0 10px;
+}
+
+.reace2 {
+    background-image: url(./images/race2.png);
+    width: 16.875rem;
+    height: 14.5625rem;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+
+
+
+.Category {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.Categorytext {
+    width: 16.875rem;
+    padding: 35px 0;
+    flex-shrink: 0;
+    border-radius: 0.375rem;
+    background: #EBEEF3;
+    margin: 10px 0;
+}
+.Categorytext > h3 {
+    text-align: center;
+    font-family: Sequel Sans;
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.8rem; /* 202.703% */
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ctgImg4 {
+    height: 16rem;
+    flex-shrink: 0;
+    border-radius: 0.375rem;
+    background: #010101;
+}
+.ctgImg4 > img {
+    margin-top: 10px;
+}
+
+
+
+.Trending {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.Trending > .textsAndImges, .water-drinking {
+    margin-top: 50px;
+}
+
+.imgwithText {
+    display: flex;
+    margin: 14px;
+}
+
+.Trending > div > h4 {
+    color: #262626;
+    font-family: Sequel Sans;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 2.375rem; /* 135.714% */
+}
+
+.textsAndImges {
+    border-radius: 0.375rem;
+    background: #EBEEF3;
+    padding: 30px;
+}
+
+.textBox {
+    margin-left: 20px;
+}
+
+.textBox > p {
+    margin-top: 10px;
+    color: rgba(38, 38, 38, 0.60);
+    font-family: DM Sans;
+    font-size: 0.80rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100.9%;
+}
+
+.textBox > h5 {
+    color: #262626;
+    font-family: Sequel Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.9%;
+    margin: 10px 0;
+}
+
+.textBox > .p2 {
+    color: #696868;
+    font-family: DM Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123.9%;
+    margin-top: 15px;
+}
+
+.water-drinking {
+    background-image: url(./images/sportsman-drinking-water.png);
+    background-color: #00000000;
+    width: 35rem;
+    height: 38rem;
+    flex-shrink: 0;
+    border-radius: 0.375rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.water-drinking > div > button {
+    margin: 40px 0 0 0;
+    text-align: center;
+    padding: 0.70rem 1.2rem;
+    gap: 1.875rem;
+    flex-shrink: 0;
+    border-radius: 0.1875rem;
+    border: 1px solid #EBEEF3;
+    background-color: transparent;
+    color: #EBEEF3;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.water-drinking > div > button:hover {
+    background-color: rgb(0, 37, 37);
+    color: white;
+}
+
+.water-drinking > div > p {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100.9%;
+    transition: 0.3s;
+}
+
+.water-drinking > div > h3 {
+    color: #FFF;
+    font-family: Sequel Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 10px 0 30px 0;
+    transition: 0.3s;
+
+}
+
+.water-drinking > div > h3:hover, .water-drinking > div > p:hover {
+    text-shadow: 10px 10px 15px rgb(6, 0, 0),
+    5px 4px 0px rgba(0, 0, 0, 0.955); 
+}
+
+.water-drinking > div {
+    margin-left: 30px;
+}
+
+
+
+.two-player {
+    width: 90%;
+    margin: auto;
+    border-radius: 0.375rem;
+    background: #EBEEF3;
+}
+
+.two-player > .two-playerImg {
+    background-image: url(./images/two-opposing-players.jpg);
+    background-size: cover;
+    height: 32.375rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    border-radius: 0.375rem 0.375rem 0rem 0rem;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footballtext {
+    margin: 40px 0 0 40px;
+    width: 6.731rem;
+    height: 2.2555rem;
+    border-radius: 0.1875rem;
+    border: 1px solid #EBEEF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EBEEF3;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: DM Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.footballtext:hover {
+    background-color: rgb(0, 51, 51);
+    color: white;
+    font-size: 1.28rem;
+}
+
+
+.footballUnderTexts {
+    margin: 0 0 40px 40px;
+}
+
+.footballUnderTexts > p {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem; /* 140% */
+}
+
+.footballUnderTexts > h4 {
+    color: #F9FAFC;
+    font-family: Sequel Sans;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.6875rem; /* 119.444% */
+    text-transform: uppercase;
+}
+
+
+.pageUpDown {
+    display: flex;
+    justify-content: end;
+    padding: 10px 20px 10px 0;
+    gap: 20px;
+}
+
+.pageUpDown > div > p {
+    padding-top: 8px;
+}
+.pageUpDown > div, .pageUpDown > p {
+    font-size: 25px;
+    text-align: center;
+    color: rgba(38, 38, 38, 0.61);
+    font-family: Sequel Sans;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 405;
+    letter-spacing: 0.015rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.pageUpDown > p > i {
+    width: 50px;
+    height: 30px;
+    background-color: #262626;
+    color: white;
+    padding-top: 8px;
+}
+
+.pageUpDown > #pageOne {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #262626;
+    color: white;
+}
+
+
+
+
+.newsAndClubRanking {
+    margin: 100px;
+
+    display: flex;
+}
+
+
+.onlyNews {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.onlyNews, .clubRanking {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.onlyNews > h3 {
+    color: #262626;
+    font-family: Sequel Sans;
+    font-size: 1.60rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.375rem; /* 135.714% */
+    width: 100%;
+}
+
+.caratefighter {
+    background-image: url(./images/karate-fighter.png);
+    background-repeat: no-repeat;
+    width: 16.875rem;
+    height: 18.75rem;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: end;
+    margin-right: 20px;
+}
+
+.caratefighter > .fighterNews {
+    background: #e1c398b0;
+    padding: 10px;
+}
+
+.fighterNews > p {
+    color: #EBEEF3;
+    font-family: DM Sans;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100.9%; /* 0.63063rem */
+}
+
+.fighterNews > h4 {
+    color: #EBEEF3;
+    font-family: Sequel Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.9%; /* 1.239rem */
+}
+
+
+.newsDitails {
+    width: 16.875rem;
+    height: 18.75rem;
+    border-radius: 0.375rem;
+    background: #EBEEF3;
+    padding: 8px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.news1, .news2, .news3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.news1 > div > p, .news2 > div > p, .news3 > div > p {
+    color: rgba(38, 38, 38, 0.60);
+    font-family: DM Sans;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100.9%; /* 0.63063rem */
+}
+
+.news1 > div > h4, .news2 > div > h4, .news3 > div > h4 {
+    color: #262626;
+    font-family: Sequel Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.9%;
+}
+
+.moreBotton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreBotton > button {
+    border-radius: 0.1875rem;
+    background: #B8C2CE;
+    display: inline-flex;
+    padding: 0.375rem 0.75rem 0.375rem 0.4375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    letter-spacing: 0.00875rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.moreBotton > button:hover {
+    color: white;
+    background-color: rgb(0, 60, 60);
+}
+
+
+.clubRanking {
+    padding: 0 30px;
+}
+
+
+.clubHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clubHead > ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
+
+.topFooter {
+    margin-top: 100px;
+}
+
+.topFooter > div{
+    margin: auto;
+    width: 90%;
+    margin-top: 100px;
+    background: #EBEEF3;
+    border-radius: 0.375rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.topFooter > div > div > p {
+    background: linear-gradient(180deg, #262626 0%, #B8C2CE 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Sequel Sans;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem; /* 100% */
+    letter-spacing: 0.0375rem;
+    text-transform: uppercase;
+    margin: 60px 30px 30px;
+}
+
+.inputBox {
+    border-radius: 0.375rem;
+    border: 1px solid var(--Main, #262626);
+    width: 450px;
+    padding-left:10px;
+    height: 2rem;
+    flex-shrink: 0;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputBox > input {
+    border: none;
+    background-color: transparent;
+    height: 2rem;
+    color: rgba(38, 38, 38, 0.37);
+    font-family: DM Sans;
+    width: 400px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem; /* 133.333% */
+    letter-spacing: 0.01313rem;
+}
+
+.inputBox > input:focus {
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+.inputBox > i {
+    font-size: 32px;
+    margin-right: 3px;
+}
+
+.topFooter > div > div > img {
+    height: 300px;
+}
+
+
+footer {
+    width: 90%;
+    padding-bottom: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > .icons, footer > .pages {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+footer > .icons > p > i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+footer > .pages > p {
+    font-size: 25px;
+    font-family: Sequel Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.onePage {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heorAra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 750px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: 550px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 380px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.heorAra > div {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+}
+
+.child1 {
+    background-color: aqua;
+}
+.child2 {
+    background-color: aquamarine;
+}
+.child3 {
+    background-color: yellow;
+}
+.child4 {
+    background-color: greenyellow;
+}
+.child5 {
+    background-color: pink;
+}
+.child6 {
+    background-color: red;
+}
+.child7 {
+    background-color: green;
+}
+.child8 {
+    background-color: palevioletred;
+}
